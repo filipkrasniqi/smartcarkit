@@ -1,7 +1,7 @@
 import sys
 
-from smartcarkit.movement.manual import ManualMovement
-from smartcarkit.sensor.ultrasonic import DistanceSensor
+from movement.manual import ManualMovement
+from sensor.ultrasonic import DistanceSensor
 
 sys.path.append("../Code/Server/")
 

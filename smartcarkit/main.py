@@ -1,4 +1,4 @@
-from smartcarkit.slam import SLAM
+from slam import SLAM
 
 
 if __name__ == "__main__":
