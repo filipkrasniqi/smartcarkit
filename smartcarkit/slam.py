@@ -2,7 +2,7 @@ import sys
 
 from movement.manual import ManualMovement
 from sensor.ultrasonic import DistanceSensor
-from smartcarkit.movement.servo import ServoThread
+from movement.servo import ServoThread
 
 sys.path.append("../Code/Server/")
 
