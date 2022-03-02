@@ -2,7 +2,8 @@ import sys
 from threading import Thread
 from time import sleep
 
-from smartcarkit.movement.manual import ManualMovement
+sys.path.append("../movement/")
+from manual import ManualMovement
 
 sys.path.append("../Code/Server/")
 
