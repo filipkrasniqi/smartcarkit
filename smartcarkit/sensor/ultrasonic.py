@@ -21,6 +21,6 @@ class DistanceSensor(Thread):
         while self.running:
             self.last_read = self.ultrasonic.get_distance()
             print("Last value {}".format(self.last_read))
-            if self.last_read < 50 and self.movement is not None:
+            if self.last_read < 10 and self.movement is not None:
                 self.movement.stop()
             sleep(1)
