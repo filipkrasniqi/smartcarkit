@@ -2,7 +2,7 @@ import sys
 from threading import Thread
 from time import sleep
 
-sys.path.append("../movement/")
+sys.path.append("movement/")
 from manual import ManualMovement
 
 sys.path.append("../Code/Server/")
