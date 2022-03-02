@@ -4,6 +4,13 @@ sys.path.append("../Code/Server/")
 
 from Motor import *
 
+FW_SPEED = 1000
+ROTATE_SPEED = 1500
+
+speed_dict = {
+    1000: 2.5   # 1000 duty means 2.5s/m -> 0.4m/s
+}
+
 class ManualMovement(Thread):
     def __init__(self):
         Thread.__init__(self)
