@@ -10,9 +10,9 @@ from Ultrasonic import *
 class SLAM:
     def __init__(self):
         self.movement = ManualMovement()
-        self.movement.run()
+        self.movement.start()
         self.distance_sensor = DistanceSensor(movement=self.movement)
-        self.distance_sensor.run()
+        self.distance_sensor.start()
 
     def run(self):
         in_val = ""
