@@ -28,7 +28,7 @@ class ManualMovement(Thread):
         elif in_val == "D":
             self.rotate_right()
         else:
-            self.PWM.setMotorModel(0, 0, 0, 0)  # Stop
+            self.stop()
 
     def forward(self):
         self.PWM.setMotorModel(1000, 1000, 1000, 1000)
@@ -41,3 +41,6 @@ class ManualMovement(Thread):
 
     def rotate_right(self):
         self.PWM.setMotorModel(1500, 1500, -1000, -1000)
+
+    def stop(self):
+        self.PWM.setMotorModel(0, 0, 0, 0)  # Stop
