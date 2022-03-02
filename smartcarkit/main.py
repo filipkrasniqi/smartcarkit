@@ -13,6 +13,8 @@ if __name__ == "__main__":
     # X: stop current operation
     # V: stop everytihing
 
+    # TODO inizio con (0,0).
+
     in_val = ""
     while in_val != "V":
         # while in_val != "X":
@@ -22,9 +24,9 @@ if __name__ == "__main__":
         elif in_val == "S":
             PWM.setMotorModel(-1000, -1000, -1000, -1000)  # Backward
         elif in_val == "A":
-            PWM.setMotorModel(-1500, -1500, 2000, 2000)  # Left
+            PWM.setMotorModel(-1000, -1000, 1500, 1500)  # Left
         elif in_val == "D":
-            PWM.setMotorModel(2000, 2000, -1500, -1500)  # Right
+            PWM.setMotorModel(1500, 1500, -1000, -1000)  # Right
         else:
             PWM.setMotorModel(0, 0, 0, 0)  # Stop
 
